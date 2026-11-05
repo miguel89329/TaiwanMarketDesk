@@ -1,0 +1,101 @@
+{
+  "schedule": {
+    "enabled": true,
+    "pre": "08:00",
+    "post": "15:00"
+  },
+  "usWatchlist": [
+    "SPX",
+    "NDX",
+    "DJI",
+    "SOX",
+    "NVDA",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "META",
+    "AMD",
+    "AVGO",
+    "TSM"
+  ],
+  "rules": {
+    "weights": [
+      30,
+      25,
+      20,
+      15,
+      10
+    ],
+    "threshold": 70,
+    "minAmount": 20000000,
+    "minMembers": 3,
+    "maxSector": 5,
+    "maxStocks": 5,
+    "minCoverage": 0.6,
+    "actionJump": 0.25,
+    "longWeights": [
+      25,
+      25,
+      25,
+      15,
+      10
+    ]
+  },
+  "themes": {
+    "AI半導體": {
+      "codes": [
+        "2330",
+        "2454",
+        "3443",
+        "3661",
+        "3529"
+      ],
+      "basis": "使用者可編輯之 AI 運算、晶片設計觀察清單；非官方產業"
+    },
+    "AI伺服器": {
+      "codes": [
+        "2382",
+        "3231",
+        "2356",
+        "6669",
+        "2376"
+      ],
+      "basis": "伺服器與運算設備業務觀察；不代表純 AI 營收"
+    },
+    "散熱與電源": {
+      "codes": [
+        "2308",
+        "3017",
+        "3324",
+        "2421"
+      ],
+      "basis": "資料中心散熱及電源供應鏈觀察"
+    }
+  },
+  "historySessions": 65,
+  "storage": {
+    "limitGB": 6,
+    "warnGB": 5,
+    "autoCleanCache": false
+  },
+  "usCalendarOverrides": {},
+  "etfMetadata": {
+    "0050": {
+      "type": "一般／主動",
+      "tracking": "臺灣50指數",
+      "source": "https://www.yuantaetfs.com/product/detail/0050/Basic_information"
+    },
+    "006208": {
+      "type": "一般／主動",
+      "tracking": "臺灣50指數",
+      "source": "https://websys.fsit.com.tw/FubonETF/Fund/IndexIntro.aspx?stkId=006208"
+    }
+  },
+  "twCalendarOverrides": {
+    "2026-10-23": {
+      "closed": true,
+      "reason": "颱風臨時休市，證券商公會公告可核對",
+      "source": "https://www.twsa.org.tw/F01/F011.html"
+    }
+  }
+}

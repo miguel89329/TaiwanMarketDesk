@@ -1,0 +1,15 @@
+{
+  "name": "taiwan-market-desk",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node app/server.mjs",
+    "report": "node app/cli.mjs",
+    "test": "node --test app/test.mjs app/test-v2.mjs app/test-quality.mjs",
+    "verify": "node app/verify-v2.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

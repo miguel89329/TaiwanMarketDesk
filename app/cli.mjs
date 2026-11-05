@@ -1,0 +1,2 @@
+import fs from 'node:fs';import path from 'node:path';import {generate,root} from './engine.mjs';
+let type=process.argv[2]??'post';try{let r=await generate(type,m=>console.error(m));let name=path.join(root,'data',r.id+'.md');fs.writeFileSync(name,r.text,'utf8');console.log(JSON.stringify({id:r.id,file:name,markets:r.markets,sources:r.sources.map(x=>({name:x.name,status:x.status,error:x.error})),candidates:r.candidates.length},null,2));}catch(e){console.error(e);process.exitCode=1;}
